@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,97,167,1) 50%, rgba(0,0,0,1) 100%);  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 3px  inset white;
+  text-align: left;
+  outline:none;
+  font-size: 25px;
+  transition: 1000ms;
+  border-radius:20px;
+  font-weight:bold;
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+background:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,100,167,1) 50%, rgba(0,0,0,1) 100%);
+  border: 3px outset white;
+}
+
+
+
+.panel {
+        background-color:#FFFFFF;
+ 	display: none;
+        overflow: hidden;
+		margin-left:20px;
+		margin-right:20px;
+border-radius:25px;
+}
+		
+
+
+
+.wallpaper{
+border-radius: 25px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,97,167,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+
+		.accordion:after {
+		    content: '\02795'; 
+		    font-size: 13px;
+		    float: right;
+		    margin-left: 5px;
+		}
+
+		.active:after {
+		    content: "\2796";
+		}
+		
+		.color{
+color:Red;
+font-weight: bold;
+}
+
+.col{
+color:purple;
+font-weight: bold;
+}
+
+.heroname{
+font-weight: bold;
+color:rgb(153, 51, 255);
+}
+
+.dmg{
+color: #0066ff;
+
+}
+.dia{
+color: #00ffff;
+font-weight:bold;
+
+}
+
+.border{
+box-shadow: 0 0 3pt 2pt black;
+border-radius:25px;
+
+
+}
+.int{
+  border-style: solid;
+  border-width: 2px 10px 2px 10px;
+  border-color:black;
+  border-radius:25px;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: black;
+   text-align:center;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,97,167,1) 50%, rgba(0,0,0,1) 100%);
+
+
+ }
+.button.accordion.active{
+display:none;
+ border-radius: 25% 10%;
+}
+
+.low_pixel{
+  text-align: left;
+}
+.tbd{
+border-radius:50px 15px;
+border:2px solid blue;
+
+
+
+}
+.atxt{
+  text-align: center;
+
+}
+
+.hero{
+	border:2px solid;
+	border-radius:25px;
+	padding:10px;
+	margin:10px;
+	border: 10px solid;
+    border-image: linear-gradient(90deg, rgba(235,23,13,0.9780287114845938) 0%, rgba(255,0,245,1) 49%, rgba(235,23,13,1) 100%);
+
+    border-image-slice: 1;
+}
+
+.images{
+height:50px;
+width:50px;
+overflow:hidden;
+}
+
+.bord{
+border:2px blue solid;
+border-radius:25px;
+margin:5px;
+padding:10px;
+}
+
+.imgborder{
+border-radius:5px;
+border:1px solid gray;
+
+
+
+}
+
+#postmessage_502726{
+color:white;
+opacity:0;
+}
+
+
+</style>
+</head>
+<tr>
+<body>
+<div class="int">
+<img src="https://media.discordapp.net/attachments/552026568772419586/852451859615842314/1.5.88.jpg" align="middle" width=680px>
+</div>
+<br/>
+
+<div class="border">
+
+	<button class="accordion" onclick="display()">
+        From The Designers
+</button>
+<div class="panel" id="panel">
+<div class="low_pixel"><br/>
+    <p>We decided to remove the "Mythic Battlefield" feature temporarily for further optimization, and will bring it back in future versions.</p>
+    <br/>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="border">
+
+	<button class="accordion" onclick="display()">
+I. Hero Adjustments
+</button>
+<div class="panel" id="panel">
+<div class="low_pixel"><br/>
+    <p>Use (↑) (↓) (~) to indicate strengthening, nerfing, and adjustments.</p>
+<br/><h2>[Natan] (~)</h2> 
+</p><p> 
+</p><p> [Passive] (↑):
+</p><p> 
+</p><p> New Effect: Every point of Physical Lifesteal will be converted into Magic Lifesteal.
+</p><p> 
+</p><p> [Skill <span class="dmg">1</span>] (~):
+</p><p> 
+</p><p> Adjusted the skill to shoot two separate projectiles in the targeted direction.
+</p>
+
+<p>
+    <br/>
+    <h2>[Alpha] (~)</h2>
+</p>
+
+<p>
+    [Passive] (~)
+</p>
+<p>
+    Damage Bonus for Beta's first 
+    <span class="dmg">2</span> attacks: 
+    <span class="dmg">40%</span> Total Physical Attack → 
+    <span class="dmg">70%</span> Extra Physical Attack
+</p>
+
+<p>
+    Damage Bonus for Beta's 
+    <span class="dmg">3</span>rd attack: 
+    <span class="dmg">80%</span> Total Physical Attack → 
+    <span class="dmg">130%</span> Extra Physical Attack
+</p>
+
+<p> <br/><h2>[Argus] (↓)</h2>
+</p><p> [Ultimate] (↓):
+</p><p> 
+</p><p> Cooldown increased by <span class="dmg">5</span>s for all levels.
+</p>
+<br/>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<br/>
+
+
+
+
+
+
+<div class="border">
+
+	<button class="accordion" onclick="display()">
+II. Weekly Free Heroes & New Skins
+
+</button>
+<div class="panel" id="panel">
+<div class="low_pixel"><br/>
+<br/>
+<p><span class="color">1</span> - Connie "Strawberry Cone" will be available on 
+    <span class="dmg">June 24th</span> (Server Time) for 
+    <span class="dmg">599</span> Diamonds. Launch week 
+    <span class="dmg">30</span>% OFF.
+</p>
+<p>Little Commander Connie and skin "Strawberry Cone" will be in a bundle and available on 
+    <span class="dmg">June 24th</span> (Server Time). Launch week 
+    <span class="dmg">30</span>% OFF.
+</p><br/><p>
+    <span class="color">2</span> - Fragment Shop Adjustments on <span class="dmg">June 16th</span> (Server Time):
+</p>
+<br/>
+<p>
+    a. Rare Skin Fragment Shop:
+</p>
+<p>
+    Will be available: <b>Freya "Dragon Hunter", Roger "Anubis", Fanny "Royal Cavalry", Grock "Grave Guardian", Minotaur "Sacred Hammer"</b>
+</p>
+<p>
+    Will be unavailable: <b>Alucard "Viscount", Natalia "Phantom Dancer", Gusion "Cyber Ops", Gord "Professor of Hell", Minsitthar "Gilded King"</b>
+</p>
+<br/>
+<p>
+    b. Hero Fragment Shop:
+</p>
+<p>
+    Will be available: <b>Lunox, Leomord, Esmeralda, Zhask, Mathilda, Sun</b>
+</p>
+<p>
+    Will be unavailable: <b>Wanwan, Ling, Claude, Selena, Dyrroth, Angela</b>
+</p>
+<br/>
+<p>
+    <span class="dmg">8</span> Free Heroes: Server Time 
+    <span class="dmg">6/11/2021 05:01:00</span> to 
+    <span class="dmg">6/18/2021 05:00:00</span> 
+    (Tap the Settings button on the top-right corner of the main page to check.)
+</p>
+<br/>
+<p>
+    <b>Cecilion, Vale, Harley, Valir, Karrie, Ling, Fanny, Lylia</b>
+</p>
+<br/>
+<p>
+    <span class="dmg">6</span> Extra Starlight Member Heroes: 
+    <b>Hanabi, Kadita, Hanzo, Lunox, Belerick, Guinevere</b>
+</p>
+</div>
+</div>
+</div>
+<br/>
+
+
+
+
+
+<div class="border">
+
+	<button class="accordion" onclick="display()">
+III. Battlefield Adjustments
+
+</button>
+<div class="panel" id="panel">
+<div class="low_pixel"><br/>
+
+<p>
+    <span class="dmg">1</span>. <b>New restriction:</b> Players can buy one active equipment item only.
+</p>
+
+<br/> <h2>[Twilight Armor] (↑)</h2>
+
+<br/><h2>[Equipment Effect Adjustments]</h2>
+
+<p> <br/>[Unique Passive - Defiance]:
+</p>
+
+<p>
+    <br/> Triggered when: taking Physical Damage of more than 
+    <span class="dmg">800</span> from one hit → more than 
+    <span class="dmg">600</span> from one hit
+</p>
+
+<p> <br/> <h2>[Odd Potion]  </h2>(Used to avoid being thrown by an ally Jawhead)<br/>
+</p>
+<p> <br/> Renamed as <b>"Throw Forbidden".</b>
+</p>
+
+<p>
+    <br/>Optimized its icon. 
+</p>
+
+<p> <br/> <h2>[Battle Spell Adjustments] </h2><br/>
+</p><p> 
+</p>
+<p> Optimized the special effects of all Battle Spells.
+</p><p> 
+</p><p> <br/> <h2>[Others]</h2><br/>
+</p><p> 
+</p><p>1. The "Camera Shift" feature supports automatic shift for all direction-targeted skills:
+</p><p> 
+</p>
+<p> a. When you drag and cast a long-range direction-targeted skill, the camera shifts automatically.
+</p><p> 
+</p>
+<p>
+    b. When you drag a short-to-mid-range direction-targeted skill and then slide toward the bottom of the screen to cast it, the camera shifts automatically.
+</p>
+<p></p>
+<p>
+    2. Assisted Aiming Mode now supports location-targeted skills. Currently applicable to the following heroes:
+</p>
+<p></p>
+<p>
+    <b>
+        Miya, Nana, Alucard, Akai, Minotaur, Freya, Gord, Kagura, Estes, Aurora, Lapu-Lapu, Vexana, Gatotkaca, Diggie, Zhask, Helcurt, Pharsa, Jawhead, Gusion, Uranus, Johnson, Chang'e, Selena, Claude, Vale, Hanzo, Thamuz, Kadita,
+Guinevere, Esmeralda, Terizla, Ling, Lylia, Silvanna, Popol and Kupa, Luo Yi, Yve,
+Beatrix, Phoveus
+
+    </b>
+</p>
+<br/>
+</div>
+</div>
+</div>
+<br/>
+
+
+
+<div class="border">
+
+	<button class="accordion" onclick="display()">
+IV. Bug Fixes
+</button>
+<div class="panel" id="panel">
+<div class="low_pixel"><br/>
+
+</p><br/><p><span class="color">1</span> - Fixed an issue where Lifesteal could apply to direct damage from equipment, Emblems and Battle Spells
+
+ </p><br/><p><span class="color">2</span> - Fixed an issue where, after killing a creep when auto-attacking with Basic Attacks, heroes wouldn't auto-attack nearby creeps.
+
+ </p><br/><p><span class="color">3</span> - Fixed an issue where Hayabusa would cast his Ultimate a wrong number of times after he was hit by Silvanna's Ultimate. Now, if Silvanna's Ultimate is still effective after hitting Hayabusa and he completes an Ultimate cast, he would be
+    pulled back to his original position.    
+
+</p><br/>
+<p><span class="color">4</span> - Fixed an issue where enemies could see Rafaela jungling due to the position-revealing effect of her skill "Light of Retribution" on creeps. 
+</p>
+<br/>
+<p>
+    <span class="color">5</span> - 
+    Fixed an issue where Atlas' Passive "Frigid Breath" might take effect at wrong locations when he returns to his Mecha after ejecting from it.
+</p>
+<br/>
+<p>
+    <span class="color">6</span> - Fixed the skill sound effects of Wanwan.
+</p>
+</p>
+</p>
+</p>
+</p>
+<br/>
+</div>
+</div>
+</div>
+<br/>
+
+
+<!--
+
+</p><br/><p><span class="color">
+</span>
+<p><span class="heroname">
+</span>
+<br/><h2>
+</p><p>
+</h2><br/>
+<span class="dia">
+</p><p>
+
+
+</button>
+
+</p>
+
+-->
+
+
+<script>
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+/*function display() {
+    var x = document.getElementById("panel");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }*/
+    var x = document.getElementById("panel");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  
+</script>
+
+</body>
+</html>
